@@ -1,0 +1,24 @@
+.title KiCad schematic
+U1 Net-_U1-Pad1_ Net-_U1-Pad2_ adc_bridge_1
+U2 Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_R7-Pad1_ Net-_R8-Pad1_ Net-_R9-Pad1_ Net-_R6-Pad1_ Net-_R5-Pad1_ Net-_R4-Pad1_ dac_bridge_6
+X2 Net-_U2-Pad6_ Net-_U2-Pad2_ Net-_U2-Pad1_ Net-_U2-Pad3_ unconnected-_X2-Pad5_ unconnected-_X2-Pad6_ Net-_U2-Pad4_ unconnected-_X2-Pad8_ unconnected-_X2-Pad9_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U1-Pad2_ IC_4017
+C1 Net-_C1-Pad1_ GND 10u 
+C2 Net-_C2-Pad1_ GND 10n
+X1 GND Net-_C1-Pad1_ Net-_U1-Pad1_ VCC Net-_C2-Pad1_ Net-_C1-Pad1_ Net-_R1-Pad2_ VCC LM555N
+R3 Net-_R3-Pad1_ VCC 1
+Vv1 Net-_R3-Pad1_ GND pulse(0 9 0 1u 1u 0.73 10)
+R2 Net-_R1-Pad2_ Net-_C1-Pad1_ 10k
+R1 VCC Net-_R1-Pad2_ 1k
+R9 Net-_R9-Pad1_ Net-_D3-Pad1_ 1k
+R8 Net-_R8-Pad1_ Net-_D2-Pad1_ 1k
+R7 Net-_R7-Pad1_ Net-_D1-Pad1_ 1k
+R5 Net-_R5-Pad1_ Net-_D5-Pad1_ 1k
+R4 Net-_R4-Pad1_ Net-_D6-Pad1_ 1k
+R6 Net-_R6-Pad1_ Net-_D4-Pad1_ 1k
+D2 Net-_D2-Pad1_ GND eSim_LED
+D1 Net-_D1-Pad1_ GND eSim_LED
+D6 Net-_D6-Pad1_ GND eSim_LED
+D5 Net-_D5-Pad1_ GND eSim_LED
+D4 Net-_D4-Pad1_ GND eSim_LED
+D3 Net-_D3-Pad1_ GND eSim_LED
+.end

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\eSim-Workspace\555\555.kicad_sch</source>
+    <date>14-04-2026 01:49:49 PM</date>
+    <tool>Eeschema (6.0.11)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>555.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u ic=0</value>
+      <libsource lib="analog" part="C_PSPICE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4cbd6a8-b370-4295-9400-70fd2f355792</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10n ic=0</value>
+      <libsource lib="analog" part="C_PSPICE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8cc47465-849c-4f68-89d3-3f88d008ef28</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <libsource lib="analog" part="R_PSPICE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c75c31f8-a232-43f6-9510-ba6346452e5e</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <libsource lib="analog" part="R_PSPICE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d451f955-534c-499a-844a-68c894093897</tstamps>
+    </comp>
+    <comp ref="v1">
+      <value>DC</value>
+      <footprint>R1</footprint>
+      <libsource lib="eSim_Sources" part="DC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07117851-ca52-4827-a7b5-2b48e88f0a79</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>555D_PSPICE</value>
+      <libsource lib="eSim_PSpice" part="555D_PSPICE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53ee6e86-9846-4135-88cc-08936c87720f</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="analog" part="C_PSPICE">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_PSPICE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="analog" part="R_PSPICE">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_PSPICE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_PSpice" part="555D_PSPICE">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">555D_PSPICE</field>
+      </fields>
+      <pins>
+        <pin num="CONTROL" name="" type="passive"/>
+        <pin num="DISCHARGE" name="" type="passive"/>
+        <pin num="GND" name="" type="passive"/>
+        <pin num="OUTPUT" name="" type="passive"/>
+        <pin num="RESET" name="" type="passive"/>
+        <pin num="THRESHOLD" name="" type="passive"/>
+        <pin num="TRIGGER" name="" type="passive"/>
+        <pin num="VCC" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eSim_Sources" part="DC">
+      <footprints>
+        <fp>1_pin</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">v</field>
+        <field name="Value">DC</field>
+        <field name="Footprint">R1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="power_out"/>
+        <pin num="2" name="-" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="analog">
+      <uri>E:\FOSSEE\KiCad\share\kicad\symbols\/analog.lib</uri>
+    </library>
+    <library logical="eSim_PSpice">
+      <uri>E:\FOSSEE\KiCad\share\kicad\symbols\/eSim_PSpice.lib</uri>
+    </library>
+    <library logical="eSim_Sources">
+      <uri>E:\FOSSEE\KiCad\share\kicad\symbols\/eSim_Sources.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="X1" pin="GND" pintype="passive"/>
+      <node ref="v1" pin="2" pinfunction="-" pintype="power_out"/>
+    </net>
+    <net code="2" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="X1" pin="THRESHOLD" pintype="passive"/>
+      <node ref="X1" pin="TRIGGER" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="X1" pin="CONTROL" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="X1" pin="DISCHARGE" pintype="passive"/>
+    </net>
+    <net code="5" name="Output">
+      <node ref="X1" pin="OUTPUT" pintype="passive"/>
+    </net>
+    <net code="6" name="VCC">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="X1" pin="RESET" pintype="passive"/>
+      <node ref="X1" pin="VCC" pintype="passive"/>
+      <node ref="v1" pin="1" pinfunction="+" pintype="power_out"/>
+    </net>
+  </nets>
+</export>
